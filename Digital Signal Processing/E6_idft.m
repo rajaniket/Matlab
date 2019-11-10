@@ -1,3 +1,5 @@
+% Matlab program to find Inverse Discrete Fourier transform 
+
 clc;
 clear;
 close all;
