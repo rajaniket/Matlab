@@ -1,3 +1,5 @@
+%program to find discrete fourier transform
+
 clc;
 clear;
 close all;
