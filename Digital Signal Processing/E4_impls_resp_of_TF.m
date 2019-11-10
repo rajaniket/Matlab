@@ -1,3 +1,5 @@
+%matlab program to find impulse response of transfer function
+
 clc;
 clear;
 close all;
