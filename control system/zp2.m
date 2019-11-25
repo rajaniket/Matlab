@@ -1,3 +1,4 @@
+% plot the zeros and poles of given transfer function, by using function tf2zp
 clc;
 clear;
 close all;
