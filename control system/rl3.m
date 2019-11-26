@@ -1,3 +1,4 @@
+%plot root locous for the transfer function,given zita is equal 0.5 and natural frquency 1.5rad/s
 clc;
 clear;
 close all;
