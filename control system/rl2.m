@@ -1,3 +1,4 @@
+% plot root locus for given transfer function at diff-diff gain
 clc;
 clear;
 close all;
