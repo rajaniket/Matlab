@@ -1,3 +1,4 @@
+% find transfer function from poles and zeros
 clc;
 clear;
 close all;
