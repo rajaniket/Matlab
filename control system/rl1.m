@@ -1,3 +1,5 @@
+% plot root locus for given transfer 
+clc;
 clc;
 clear;
 close all;
