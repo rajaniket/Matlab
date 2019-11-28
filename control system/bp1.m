@@ -1,3 +1,4 @@
+% bode plot of given transfer function
 clc;
 clear;
 close all;
