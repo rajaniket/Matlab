@@ -13,7 +13,7 @@ disp(n);
 disp The cutoff frequency is in rad:;
 disp(Wc);
 fc=Wc/(2*pi);
-[num,den]=butter(n,Wc,'high','s');
+[num,den]=butter(n,Wc,'low','s');
 w=0:200:5000*pi;
 h=freqs(num,den,w);
 m=20*log(abs(h));
