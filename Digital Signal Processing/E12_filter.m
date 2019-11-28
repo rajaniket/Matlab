@@ -1,4 +1,4 @@
-% FIR filter 
+% Design FIR filter 
 clc;
 clear;
 close all;
