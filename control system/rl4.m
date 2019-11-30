@@ -1,3 +1,4 @@
+% find root locous of given transfer function
 clc;
 clear;
 close all;
