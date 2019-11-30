@@ -1,4 +1,4 @@
-%parallel system transfer function
+% Solve the block and obtain transfer function ,system contains feedback,parallel and series 
 clc;
 clear;
 close all;
