@@ -1,3 +1,4 @@
+% find Transfer function of blocks in series 
 clc;
 clear;
 close all;
