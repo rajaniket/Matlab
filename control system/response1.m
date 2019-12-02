@@ -1,3 +1,4 @@
+% Step response of given transfer function for time 0 to 2 of  step 0.05s
 clc;
 clear;
 close all;
