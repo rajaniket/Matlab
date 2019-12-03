@@ -1,3 +1,4 @@
+% exponential Response of transfer function 
 clc;
 clear;
 close all;
