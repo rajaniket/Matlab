@@ -1,3 +1,4 @@
+% step response of given transfer function
 clc;
 clear;
 close all;
