@@ -1,4 +1,4 @@
-%parallel system transfer function
+% Transfer function of feedback blocks 
 clc;
 clear;
 close all;
