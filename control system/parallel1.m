@@ -1,4 +1,4 @@
-%parallel system transfer function
+% Transfer function of Parallel blocks
 clc;
 clear;
 close all;
