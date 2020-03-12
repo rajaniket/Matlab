@@ -1,12 +1,21 @@
-% bode plot of given transfer function
-clc;
-clear;
-close all;
-n=[200 600];
-d=conv(conv([1,0],[1,2]),[1,4,100]);
-w=logspace(-1,3,100);
-[mag,phase,w]=bode(n,d,w);
-magdb=20*log10(mag);
-for i=1:10
-    fprintf('%f \t\t\t %f\t\t\t%f\t\t\t\n',magdb(i),phase(i),w(i));
-end;
+clc;clear all;close all;
+p1=[0 -2];
+z1=[];
+k1=4;
+Gs=zpk(z1,p1,k1); %Gs:-OLTF Uncompensated system
+Gs_cl=feedback(Gs,1);
+
+%Gcs lead compensated system
+z2=[-2.9];p2=[-5.4];k2=[4.69];
+Gcs_lead=zpk(z2,p2,k2);
+Glead=Gs*Gcs_lead;
+Glead_cl=feedback(Glead,1);
+
+%lag compensator
+z3=[-0.01];p3=[0.0025];k3=[1];
+Gcslag=zpk(z3,p3,k3);
+Glead_lag=Glead*Gcslag;
+Glead_lag_cl=feedback(Glead_lag,1);
+
+%rootlocous
+rlocus(Glead_lag);
