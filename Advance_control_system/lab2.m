@@ -9,3 +9,11 @@ bode(Gs);
 z2=[-4.4];p2=[-18.3];k2=[41.7];
 Gcs=zpk(z2,p2,k2);
 Gs_c=Gcs*Gs;
+subplot(122)
+bode(Gs_c);
+Gs_c_cltf=feedback(Gs_c,1);
+figure;
+t=0:0.1:10;
+lsim(Gs_cltf,t,t)
+hold on;
+lsim(Gs_c_cltf,t,t);
