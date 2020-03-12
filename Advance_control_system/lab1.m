@@ -19,3 +19,14 @@ Glead_lag_cl=feedback(Glead_lag,1);
 
 %rootlocous
 rlocus(Glead_lag);
+figure();
+
+%step response
+step(Gs_cl);
+hold on;
+step(Glead_lag_cl);
+
+t=0:0.1:10;
+ramp=1*t;
+lsim(Gs_cl,t,t);
+
