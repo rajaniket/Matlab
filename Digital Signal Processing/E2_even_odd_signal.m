@@ -5,7 +5,7 @@ clear;
 close all;
 q=input('type x[n]= ');
 n=input('enter range= ');  %e.g. -2:6 third location is zero that means,type a/c to xn
-w=fliplr(q);
+w=fliplr(q);  % fliping q
 e=fliplr(n)*-1;
 if(max(n)>max(e))
     d=max(n)-max(e);
