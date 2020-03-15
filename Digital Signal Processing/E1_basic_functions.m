@@ -7,7 +7,7 @@ close all;
 x=-5:1:5;   % defined for stem axis range
 xn=[zeros(1,5),ones(1,6)]; % a/c to x length define input values
 subplot(3,3,1);
-stem(x,xn);
+stem(x,xn); % Discrete
 xlabel('Time');
 ylabel('Magnitude');
 title('Unit step function');
