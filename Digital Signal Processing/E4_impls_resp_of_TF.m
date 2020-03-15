@@ -7,11 +7,11 @@ n=input('enter the numerator:');
 d=input('enter the denomerator:');
 N=input('input the sampple: ');
 subplot(221)
-zplane(n,d);
+zplane(n,d);   
 title('pole zero plot');
-[m,t]=impz(n,d,N);
+[m,t]=impz(n,d,N);   %impulse 
 subplot(222);
-stem(t,m);
+stem(t,m);   
 xlabel('Time');
 ylabel('Magnitude')
 title('F[n]');
