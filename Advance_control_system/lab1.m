@@ -3,7 +3,7 @@ p1=[0 -2];
 z1=[];
 k1=4;
 Gs=zpk(z1,p1,k1); %Gs:-OLTF Uncompensated system
-Gs_cl=feedback(Gs,1);
+Gs_cl=feedback(Gs,1); % closed loop ttransfer function
 
 %Gcs lead compensated system
 z2=[-2.9];p2=[-5.4];k2=[4.69];
@@ -22,7 +22,7 @@ rlocus(Glead_lag);
 figure();
 
 %step response
-step(Gs_cl);
+step(Gs_cl);  % step response of closed loop ttransfer function
 hold on;
 step(Glead_lag_cl);
 
