@@ -25,8 +25,6 @@ if((-1.0*(Z1(j) - 1.0)*(Z1(j) + 1.0))>=0)
  Y_new(l)=Z1(j);
  Z_new(l)=Z(i);
  l=l+1;
-else
-continue;
 end
 end
 end
