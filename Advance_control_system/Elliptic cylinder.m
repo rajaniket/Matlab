@@ -1,3 +1,4 @@
+%Elliptic cylinder
 clc; clear; close all;
 syms x1 x2 x3 x4 h d g a b
 h=5;
@@ -33,7 +34,7 @@ end
 X_new=[X_new -X_new];
 Y_new=[Y_new Y_new];
 Z_new=[Z_new Z_new];
-scatter3(X_new,Y_new,Z_new,'k');
+scatter3(X_new,Y_new,Z_new,'blue');
 set(gca,'XLim',[-2 2],'YLim',[-2 2],'ZLim',[-0.8 0.8])
 xlabel('X axes')
 ylabel('Y axes')
