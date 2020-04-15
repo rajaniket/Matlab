@@ -6,7 +6,7 @@ Ap=input('Enter the attentuation in passband in db :');
 As=input('Enter the attentuation in Stop band in db :');
 Wp=input('Enter passband edge frequency in rad :');
 Ws=input('Enter Stopband edge frequency in rad :');
-[n,Wc]=buttord(Wp,Ws,Ap,As);
+[n,Wc]=buttord(Wp,Ws,Ap,As); //passband stopband
 disp The order of filter is:;
 disp(n);
 disp The cutoff frequency is in rad:;
