@@ -22,7 +22,7 @@ l=1;
 for i=1:N
 for j=1:N
 if((2.0*Z(i)^2 - 5.0*Z1(j)^2 + 5.0)>=0)
- X_new(l)=0.70710678118654752440084436210485*(2.0*Z(i)^2 - 5.0*Z1(j)^2 + 5.0)^(1/2);
+ X_new(l)=0.70710678118654752440084436210485*(2.0*Z(i)^2 - 5.0*Z1(j)^2 + 5.0)^(1/2); %this equation is aquired from x1val,x2val...(from command window)
  Y_new(l)=Z1(j);
  Z_new(l)=Z(i);
  l=l+1;
@@ -31,7 +31,7 @@ continue;
 end
 end
 end
-X_new=[X_new -X_new];
+X_new=[X_new -X_new]; % Xnew equation exist twice but with -ve sign
 Y_new=[Y_new Y_new];
 Z_new=[Z_new Z_new];
 scatter3(X_new,Y_new,Z_new,'k');
