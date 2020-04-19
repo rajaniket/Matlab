@@ -1,11 +1,10 @@
 clc; clear; close all;
-syms x1 x2 x3 x4 h d g a b
+syms x1 x2 x3 x4 h d g a b %% defining variables
 h=6;
 d=3;
 g=1;
 a=1;
-[solx1,solx2,solx3,solx4,params,conds]=solve(x3==0,-x3*(h*x2+d*x2^2+x1*x3)==0,
-(x1^2/a^2)+(x2^2/a^2)-1==0,-g*x3*x4==0,x1,x2,x3,x4,'ReturnCondition',true );
+[solx1,solx2,solx3,solx4,params,conds]=solve(x3==0,-x3*(h*x2+d*x2^2+x1*x3)==0,(x1^2/a^2)+(x2^2/a^2)-1==0,-g*x3*x4==0,x1,x2,x3,x4,'ReturnCondition',true );
 x1val=vpa(solx1);
 x2val=vpa(solx2);
 x3val=vpa(solx3);
@@ -21,7 +20,7 @@ l=1;
 for i=1:N
 for j=1:N
 if((-1.0*(Z1(j) - 1.0)*(Z1(j) + 1.0))>=0)
- X_new(l)=(-1.0*(Z1(j) - 1.0)*(Z1(j) + 1.0))^(1/2);
+ X_new(l)=(-1.0*(Z1(j) - 1.0)*(Z1(j) + 1.0))^(1/2);% equation is acquired from x1val through command window
  Y_new(l)=Z1(j);
  Z_new(l)=Z(i);
  l=l+1;
