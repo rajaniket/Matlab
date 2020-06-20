@@ -4,6 +4,12 @@ h=6;
 d=3;
 g=1;
 a=1;
+%***********shortcut****************
+%f=((x1*x1)/(a*a))+((x2*x2)/(a*a))-1;
+%interval=[-1 5 -2 2 -1 1];
+%fimplicit3(f, interval);
+%set(gca,'XLim',[-2 2],'YLim',[-2 2],'ZLim',[-1 1]) 
+%xlabel('X1'); ylabel('X2'); zlabel('X4');title('Spheroid');
 [solx1,solx2,solx3,solx4,params,conds]=solve(x3==0,-x3*(h*x2+d*x2^2+x1*x3)==0,(x1^2/a^2)+(x2^2/a^2)-1==0,-g*x3*x4==0,x1,x2,x3,x4,'ReturnCondition',true );
 x1val=vpa(solx1);
 x2val=vpa(solx2);
